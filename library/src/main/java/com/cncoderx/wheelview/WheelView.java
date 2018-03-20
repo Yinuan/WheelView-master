@@ -47,16 +47,16 @@ public class WheelView extends View {
 
     public WheelView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.WheelView, 0, R.style.w_view);
-        boolean cyclic = a.getBoolean(R.styleable.WheelView_cyclic, false);
-        int visibleItems = a.getInt(R.styleable.WheelView_visibleItems, mVisibleItems);
-        int lineSpace = a.getDimensionPixelOffset(R.styleable.WheelView_lineSpace, mLineSpace);
-        int textSize = a.getDimensionPixelSize(R.styleable.WheelView_textSize, mTextSize);
-        int selectedColor = a.getColor(R.styleable.WheelView_selectedColor, 0);
-        int unselectedColor = a.getColor(R.styleable.WheelView_unselectedColor, 0);
-        mDividerTop = a.getDrawable(R.styleable.WheelView_divider);
-        mDividerBottom = a.getDrawable(R.styleable.WheelView_divider);
-        CharSequence[] entries = a.getTextArray(R.styleable.WheelView_entries);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.wheelview2, 0, R.style.w_view);
+        boolean cyclic = a.getBoolean(R.styleable.wheelview2_cyclic, false);
+        int visibleItems = a.getInt(R.styleable.wheelview2_visibleItems, mVisibleItems);
+        int lineSpace = a.getDimensionPixelOffset(R.styleable.wheelview2_lineSpace, mLineSpace);
+        int textSize = a.getDimensionPixelSize(R.styleable.wheelview2_textSize, mTextSize);
+        int selectedColor = a.getColor(R.styleable.wheelview2_selectedColor, 0);
+        int unselectedColor = a.getColor(R.styleable.wheelview2_unselectedColor, 0);
+        mDividerTop = a.getDrawable(R.styleable.wheelview2_divider);
+        mDividerBottom = a.getDrawable(R.styleable.wheelview2_divider);
+        CharSequence[] entries = a.getTextArray(R.styleable.wheelview2_entries);
         a.recycle();
 
         mPaint = new TextPaint();
